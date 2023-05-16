@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="api-project.css" />
+    <link rel="stylesheet" href="clouds-apiproject.css" />
+    <title>What's The Weather?</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script async defer type="module" src="api-project.js"></script>
+  </head>
+  <body id="bodybackgound">
+    <div class="weather-card">
+      <h1 id="root">What's the Weather?</h1>
+      <div class="search-bar">
+        <input class="city-name" type="search" placeholder="Enter place here" />
+        <button>Submit</button>
+      </div>
+      <div id="loading" class="weather">
+        <h2 class="city">Paris</h2>
+        <p class="temperature">20°C</p>
+        <p>feels like: <span class="feels-like">20°C</span></p>
+        <img src="weather-images/cloud.png" class="icon" />
+        <div class="more-info">
+          <div class="name-details">
+            <div class="info-details">
+              Humidity
+              <p class="humidity">1</p>
+              <img src="weather-images/humidity.svg" class="additional-icons" />
+            </div>
+            <div class="info-details">
+              Air Pressure
+              <p class="pressure">1</p>
+              <img src="weather-images/pressure.svg" class="additional-icons" />
+            </div>
+            <div class="info-details">
+              Wind
+              <p class="wind">1</p>
+              <img src="weather-images/wind.svg" class="additional-icons" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="time"></div>
+    <div id="clouds">
+      <div class="cloud x1"></div>
+      <div class="cloud x2"></div>
+      <div class="cloud x3"></div>
+      <div class="cloud x4"></div>
+      <div class="cloud x5"></div>
+    </div>
+  </body>
+</html>
